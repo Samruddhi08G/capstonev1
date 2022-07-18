@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/capstonev1/static/css/main.76db0792.css",
-    "main.js": "/capstonev1/static/js/main.a4feb816.js",
+    "main.css": "/capstonev1/static/css/main.59ac775b.css",
+    "main.js": "/capstonev1/static/js/main.edfce273.js",
+    "static/media/image2.jpg": "/capstonev1/static/media/image2.d8f7ab2da8b85a4fbb94.jpg",
     "static/media/cc_image1.jpg": "/capstonev1/static/media/cc_image1.474294d3c9f202fd43b9.jpg",
     "static/media/bannerImage.jpg": "/capstonev1/static/media/bannerImage.68e0f3de4d5f73aabf7f.jpg",
+    "static/media/image-banner3.jpg": "/capstonev1/static/media/image-banner3.7783ec4a492da1962e9e.jpg",
     "static/media/image.jpg": "/capstonev1/static/media/image.553b7f56990f875b7523.jpg",
     "static/media/hero-image.jpg": "/capstonev1/static/media/hero-image.02772fb463754c537d0a.jpg",
     "static/media/product-image-jewellery.jpg": "/capstonev1/static/media/product-image-jewellery.1676028e8dc5563022d5.jpg",
@@ -18,12 +20,13 @@
     "static/media/product-image-electronic-device.jpg": "/capstonev1/static/media/product-image-electronic-device.0f2b23caab3db025572a.jpg",
     "static/media/feather.png": "/capstonev1/static/media/feather.5324d928440f0fc00eb7.png",
     "static/media/breathable.png": "/capstonev1/static/media/breathable.935733a5ee94b4b80793.png",
+    "static/media/loader.webp": "/capstonev1/static/media/loader.76d6d1f962730f0ac63c.webp",
     "index.html": "/capstonev1/index.html",
-    "main.76db0792.css.map": "/capstonev1/static/css/main.76db0792.css.map",
-    "main.a4feb816.js.map": "/capstonev1/static/js/main.a4feb816.js.map"
+    "main.59ac775b.css.map": "/capstonev1/static/css/main.59ac775b.css.map",
+    "main.edfce273.js.map": "/capstonev1/static/js/main.edfce273.js.map"
   },
   "entrypoints": [
-    "static/css/main.76db0792.css",
-    "static/js/main.a4feb816.js"
+    "static/css/main.59ac775b.css",
+    "static/js/main.edfce273.js"
   ]
 }
