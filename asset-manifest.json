@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/capstonev1/static/css/main.76db0792.css",
+    "main.js": "/capstonev1/static/js/main.a4feb816.js",
+    "static/media/cc_image1.jpg": "/capstonev1/static/media/cc_image1.474294d3c9f202fd43b9.jpg",
+    "static/media/bannerImage.jpg": "/capstonev1/static/media/bannerImage.68e0f3de4d5f73aabf7f.jpg",
+    "static/media/image.jpg": "/capstonev1/static/media/image.553b7f56990f875b7523.jpg",
+    "static/media/hero-image.jpg": "/capstonev1/static/media/hero-image.02772fb463754c537d0a.jpg",
+    "static/media/product-image-jewellery.jpg": "/capstonev1/static/media/product-image-jewellery.1676028e8dc5563022d5.jpg",
+    "static/media/cc_image2.jpg": "/capstonev1/static/media/cc_image2.1b6b8ca6875cdfba64a1.jpg",
+    "static/media/cc_image4.jpg": "/capstonev1/static/media/cc_image4.e9b446ab3d5efecc84b7.jpg",
+    "static/media/product-image-men.jpg": "/capstonev1/static/media/product-image-men.ea39f6a97c6d03bdae0c.jpg",
+    "static/media/banner-image3.jpg": "/capstonev1/static/media/banner-image3.d4e2824d1aec2a421b59.jpg",
+    "static/media/product-woman-image.jpeg": "/capstonev1/static/media/product-woman-image.74766843252ad6241844.jpeg",
+    "static/media/sweat.png": "/capstonev1/static/media/sweat.be8a333ac8b292aee147.png",
+    "static/media/materials.png": "/capstonev1/static/media/materials.ac3c80afb98202d30c79.png",
+    "static/media/cc_image3.jpg": "/capstonev1/static/media/cc_image3.b64f1c03785586da79eb.jpg",
+    "static/media/product-image-electronic-device.jpg": "/capstonev1/static/media/product-image-electronic-device.0f2b23caab3db025572a.jpg",
+    "static/media/feather.png": "/capstonev1/static/media/feather.5324d928440f0fc00eb7.png",
+    "static/media/breathable.png": "/capstonev1/static/media/breathable.935733a5ee94b4b80793.png",
+    "index.html": "/capstonev1/index.html",
+    "main.76db0792.css.map": "/capstonev1/static/css/main.76db0792.css.map",
+    "main.a4feb816.js.map": "/capstonev1/static/js/main.a4feb816.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76db0792.css",
+    "static/js/main.a4feb816.js"
+  ]
+}
