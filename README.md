@@ -70,4 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-![Light house Image](./src/asset/lighthouseReport.PNG)
+![Light house Image](./src/asset/CapstoneV1Final.PNG)
+![Light house Image](./src/asset/CapstoneV1Mobile.PNG)

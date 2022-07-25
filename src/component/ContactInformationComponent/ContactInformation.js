@@ -280,11 +280,11 @@ const ContactInformation = () => {
                                 <div className="shipping_contact-details">
                                     <p>
 
-                                        {ShippingInformation_state.emailid}<br />{ShippingInformation_state.phonenumber}
+                                        {ShippingInformation_state.email}<br />{ShippingInformation_state.phonenumber}
                                     </p>
                                     <p>
                                         {ShippingInformation_state.countryname} <br />
-                                        {ShippingInformation_state.firstname}&nbsp;&nbsp;{ShippingInformation_state.lastname}<br />
+                                        <b>{ShippingInformation_state.firstname}</b>&nbsp;&nbsp;<b>{ShippingInformation_state.lastname}</b><br />
                                         {ShippingInformation_state.streetaddress}&nbsp;&nbsp;{ShippingInformation_state.cityname}<br />
                                         {ShippingInformation_state.statename}&nbsp;&nbsp;{ShippingInformation_state.zipcode}
                                     </p>
