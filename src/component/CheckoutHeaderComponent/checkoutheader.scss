@@ -1,0 +1,32 @@
+$checkout-header-font-size: 24px;
+$checkout-font-weight: 700;
+
+.checkout-header-name{
+    font-size: $checkout-header-font-size;
+    font-weight: $checkout-font-weight;
+}
+.checkout-image{
+    width: 100px;
+    height: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .checkout-header-name{
+        font-size: $checkout-header-font-size;
+        font-weight: $checkout-font-weight;
+    }
+    .checkout-image{
+        width: 100px;
+        height: 5px;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+    .checkout-header-name{
+        font-size: $checkout-header-font-size;
+        font-weight: $checkout-font-weight;
+    }
+    .checkout-image{
+        width: 100px;
+        height: 5px;
+    }
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Playfair+Display:ital,wght@1,500&display=swap');
+@import './../../variables.scss';
+
+$Btn-Border: 1px solid #e26a2c;
+$Btn-Color: #ffffff;
+$Collection-Btn-Color: #e26a2c;
+
+
+
+.landingpage-secondarybanner_image-section{
+    display: block;
+    left: 0;
+    height: auto;
+    margin-top: 20px;
+    font-family: 'Mulish', sans-serif;
+}
+.secondary-banner_landingpage{
+    width: 100%;
+    height: auto;
+}
+.LandingPage-SecondaryBanner{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 7%;
+}
+
+.landingpage-secondary-banner-alldetails{
+    padding: 0px 17px;
+}
+
+.landingpage-secondary-banner-alldetails p{
+    line-height: 2;
+    text-align: justify;
+}
+
+.shop-btn-secondarybanner{
+    width: 80%;
+    height: 38px;
+    border: $Btn-Border;
+}
+
+.shop-collection{
+    border: $Btn-Border;
+    color: $Collection-Btn-Color;
+    background-color:#ffffff;
+}
+.shop-new{
+    color: $Btn-Color;
+    background-color:#e26a2c;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .landingPage-secondary-banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 70px 7%;
+        margin-top: 160px;
+    }
+    
+    .landingpage-secondarybanner_image-section{
+        display: block;
+        position: relative;
+        margin: 0px 17px;
+        left: 0;
+        height: auto;
+    }
+    .landingpage-secondarybanner_buttonsection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .secondary-banner_landingpage{
+        width: 100%;
+        height: 375px;
+    }
+    
+    .landingpage-secondary-banner-alldetails{
+        text-align: justify;
+        padding: 0px 18px;
+        line-height: 1.6;
+        margin-top: 0px;
+        font-family: 'Mulish', sans-serif;
+    }
+    .shop-btn-secondarybanner{
+        width: 80%;
+        height: 38px;
+        border: $Btn-Border;
+    }
+
+    .shop-collection{
+        border: $Btn-Border;
+        color: $Collection-Btn-Color;
+        background-color:#ffffff;
+    }
+    .shop-new{
+        color: $Btn-Color;
+        background-color:#e26a2c;
+        margin-top: 0px;
+        
+    } 
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1025px){
+    .landingPage-secondary-banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 70px 7%;
+    }
+    
+    .landingpage-secondarybanner_image-section{
+        display: block;
+        position: relative;
+        margin: 0px 17px;
+        left: 0;
+        height: auto;
+    }
+    .landingpage-secondarybanner_buttonsection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .secondary-banner_landingpage{
+        width: 100%;
+    }
+    
+    .landingpage-secondary-banner-alldetails{
+        text-align: justify;
+        padding: 0px 18px;
+        line-height: 1.6;
+        margin-top: 0px;
+        font-family: 'Mulish', sans-serif;
+    }
+    .shop-btn-secondarybanner{
+        width: 80%;
+        height: 38px;
+        border: $Btn-Border;
+    }
+
+    .shop-collection{
+        border: $Btn-Border;
+        color: $Collection-Btn-Color;
+        background-color:#ffffff;
+    }
+    .shop-new{
+        color: $Btn-Color;
+        background-color:#e26a2c;
+        margin-top: 0px;
+    }
+}

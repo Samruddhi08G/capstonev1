@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Playfair+Display:ital,wght@1,500&display=swap');
+@import './../../variables.scss';   
+
+    $header-top: 16px;
+    $header-color: #ffffff;
+    $header-background-color: #e26a2c;
+    $header-font-family: 'Mulish', sans-serif;
+    $header-font-size: 16px;
+    $header-font-weight: 700;
+    $header-underline-color: #fda65d;
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 25px;
+        align-items: center;
+        justify-content: space-between;
+        color: $header-color;
+        background-color: $header-background-color;
+       
+    }
+    .nav-list{
+        display: none;
+        
+    }
+    .navlist a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .header-underline-home{
+        width: 55px;
+        height: 2px;
+        background-color:  $header-underline-color;
+        object-fit: cover;
+    }
+    .nav-sm-list{
+        width: 100%;
+        display: flex;
+        height: 145px;
+        flex-direction: column;
+        background-color: #d1d3d6;;
+        padding: 10px;
+        text-align: initial;
+        line-height: 2;
+    }
+    .search-field{
+        display: none;
+    }
+    .user-icon{
+        display: none;  
+    }
+    .sign-in-field{
+        display: none;  
+    }
+    .menu-icon{
+        height: 18px;
+        margin: 0px;
+    }
+   
+    .nav-Shopping-Cart {
+       display: flex;
+       flex-direction: row;
+    }
+    .header-search-icon{
+        display: none;
+    }
+    .App-logo {
+        height: 18px;
+        width: 100px;
+      }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-underline-home{
+        width: 55px;
+        height: 3px;
+        background-color: $header-underline-color;
+        object-fit: cover;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 60px;
+        align-items: center;
+        justify-content: space-between;
+        color: $header-color;
+        background-color: $header-background-color;
+    }
+    .menu-icon{
+        display: none;
+   }
+   nav{
+    display: flex;
+    flex-direction: row;
+   }
+    .nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1.5fr 1.5fr;
+        margin: 0px 230px;
+        align-items: center;
+        grid-gap: 1em;
+    }
+    .App-logo {
+        height: 18px;
+        width: 100px;
+      }
+      a {
+        color: #ffffff !important;
+        text-decoration: $header-underline-color !important;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: $header-font-family;
+        color: $header-color;
+        padding: 12px 10%;
+        background-color: $header-background-color;
+        font-size: $header-font-size;
+    }
+    .header-underline-home{
+        width: 55px;
+        height: 3px;
+        background-color: $header-underline-color;
+        object-fit: cover;
+    }
+    .nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1.5fr 1.5fr;
+        grid-gap: 1em;
+        margin: 0 294px;
+        align-items: center;
+    }
+   
+
+    .nav-Shopping-Cart {
+       margin-right: 12px;
+    }
+
+
+
+    .App-logo {
+        height: 18px;
+        width: 100px;
+    }
+
+    nav{
+        display: flex;
+    }
+
+    .header-icon{
+        height: 24px;
+        margin-top: 3px;
+    }
+
+    .user-icon{
+        margin-left: 20px;
+    }
+
+    .nav-mobile-middle-section{
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .shopping-cart-icon{
+        margin-left: 20px;
+    }
+     a {
+        color: #ffffff !important;
+        text-decoration:  $header-underline-color;
+    }
+}
+
+

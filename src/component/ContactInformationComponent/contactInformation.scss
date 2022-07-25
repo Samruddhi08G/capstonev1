@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Playfair+Display:ital,wght@1,500&display=swap');
+@import './../../variables.scss';
+
+$header-underline-color: #e26a2c;
+$checkout-page-color: 172026;
+$font-family: 'Mulish', sans-serif;
+$form-font-label-size: 14px;
+$form-font-weight: 600;
+$form-border: 1px solid #B5B7BC;
+$form-input-border-radius: 8px;
+$form-text-align: left;
+$form-line-height: 2;
+$form-btn-border: 1px solid #e26a2c;
+$form-btn-color: #e26a2c;
+
+
+
+
+.contact-information_section{
+    font-family: $font-family;
+    padding: 0px 17px;
+    color: $checkout-page-color;
+}
+
+.contact-information_header{
+    background-color: $header-underline-color;
+    height: 5px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.contact-information_details{
+    text-align: $form-text-align;
+}
+
+.contact-information_heading{
+    font-weight: 600;
+}
+.contact-information{
+    line-height: $form-line-height;
+    font-size: 16px;
+}
+
+.contact-info_form{
+    text-align: left;
+    line-height: 2
+}
+
+input{
+    width: 90%;
+    height: 26px;
+    border: $FormBorder;
+    border-radius: $form-input-border-radius;
+    opacity: 1;
+    padding: 2px 10px;
+}
+select#country-name {
+    width: 95%;
+    height: 32px;
+    border: $FormBorder;
+    border-radius: $form-input-border-radius;
+    opacity: 1;
+    padding: 2px 10px;
+}
+.form-labels{
+    font-size: $form-font-label-size;
+    font-weight: $form-font-weight;
+}
+.shipping-details_form{
+    text-align: $form-text-align;
+    line-height: $form-line-height;
+}
+.form-btn{
+    width: 50%;
+    height: 32px;
+    color: $form-btn-color;
+    background-color: white;
+    border: $form-btn-border;
+    margin-top: 25px;
+}
+
+.contact-information_list{
+    text-align: left;
+    margin-top: 20px;
+    border-top: $FormBorder;
+}
+.contact-information_pricing-summary-column{
+    display: none;
+}
+select#state-name {
+    border: $FormBorder;
+    width: 96%;
+    height: 32px;
+    border-radius: $form-input-border-radius;
+    opacity: 1;
+}
+.zipcode-input-textbox{
+    margin-left: 10px;
+    width: 90%;
+    height: 26px;
+}
+.contiue-form-btn{
+    margin-top: 25px;
+}
+.shipping-section{
+    font-family: $font-family;
+    color: $font-color;
+}
+.checkout-header{
+    text-align: center;
+}
+.contact-information_header{
+    background-color: $header-underline-color;
+    height: 5px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+.guest-checkout_details{
+    border: $FormBorder;
+    padding: 10px 10px;
+    font-size: $form-font-label-size;
+}
+.shipping_contact-details{
+    line-height: 1.6;
+}
+.shipping-info{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    align-items: center;
+}
+.shipping-details{
+    line-height: $form-line-height;
+}
+.shipping-page{
+    text-align: $font-text-align;
+    
+}
+
+input[type='radio']{
+    width: 16px;
+    height: 20px;
+
+}
+.shipping_selection-row{
+    display: flex;
+    flex-direction: row;
+}
+.shipping_labels{
+    font-size: $font-labels;
+    margin-left: 10px;
+    text-align: justify;
+}
+.form-btn{
+    width: 50%;
+    height: 32px;
+    color: $form-btn-color;
+    background-color: white;
+    border: $form-btn-border;
+    margin-top: 25px;
+}
+.continue-btn{
+    text-align: center;
+}
+.checkout-shipping_payment-method{
+    text-align: left;
+    margin-top: 20px;
+    border-top: $FormBorder;
+    color: $payment-color;
+}
+
+input[type='radio']:checked:after {
+    width: 6px;
+    height: 7px;
+    border: $form-btn-border;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+.edit-label{
+    display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact-information_header {
+        background-color: #e26a2c;
+        height: 5px;
+        margin-left: 414px;
+        margin-right: 414px
+    }
+    .contact-information_section {
+        padding: 10px 42px;
+    }
+    .contact-information_grid-columns{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin-top: 20px;
+        grid-gap: 1em;
+    }
+    .contact-information_pricing-summary-column{
+        display: block;
+    }
+    .contact-info_form{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 1em;
+    }
+    select#countryname{
+        border: $FormBorder;
+        width: 94% !important;
+        height: 32px;
+        border-radius: $form-input-border-radius;
+        opacity: 1;
+    }
+    
+    .contact-information_state-details{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+    select#statename {
+        border: $FormBorder;
+        width: 100%;
+        height: 32px;
+        border-radius: $form-input-border-radius;
+        opacity: 1;
+    }
+    .zipcode-input-textbox{
+        margin-left: 10px;
+        width: 75%;
+        height: 26px;
+    }
+    .form-btn{
+        width: 25%;
+        height: 32px;
+        color: $form-btn-color;
+        background-color: white;
+        border: $form-btn-border;
+        margin-top: 25px;
+        margin: auto;
+    }
+    .contiue-form-btn{
+        margin-top: 25px;
+    }
+    
+    .edit-label{
+        display:block;
+        color: $form-btn-color;
+        
+    }
+    .edit-details{
+        width: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .shipping-selection{
+        border: $form-border;
+        margin-top: 1em;
+        padding: 0px 10px;
+    }
+    .continue-form-btn{
+        margin-top: 25px;
+    }
+    .shipping-page {
+        text-align: left;
+        padding: 0px 80px;
+        margin-bottom: 20px;
+    }
+    .contact-information_list{
+        text-align: left;
+        margin-top: 20px;
+        border-top: none;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+    .contact-information_header {
+        background-color: #e26a2c;
+        height: 5px;
+        margin-left: 540px;
+        margin-right: 540px;
+    
+    }
+    .contact-information_section {
+        padding: 10px 140px;
+    }
+    .contact-information_grid-columns{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin-top: 20px;
+        grid-gap: 1em;
+    }
+    .contact-information_pricing-summary-column{
+        display: block;
+    }
+    .contact-info_form{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 1em;
+    }
+    select#country-name {
+        border: $FormBorder;
+        width: 47%;
+        height: 32px;
+        border-radius: $form-input-border-radius;
+        opacity: 1;
+    }
+    .contact-information_state-details{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+    select#state-name {
+        border: $FormBorder;
+        width: 100%;
+        height: 32px;
+        border-radius: $form-input-border-radius;
+        opacity: 1;
+    }
+    .zipcode-input-textbox{
+        margin-left: 10px;
+        width: 75%;
+        height: 26px;
+    }  
+    .form-btn{
+        width: 25%;
+        height: 32px;
+        color: $form-btn-color;
+        background-color: white;
+        border: $form-btn-border;
+        margin-top: 25px;
+        margin: auto;
+    }
+    .contiue-form-btn{
+        margin-top: 25px;
+    }
+    .contact-information_guest-checkout-column{
+        border: $form-border;
+        padding: 0px 10px;
+    }
+    
+    .edit-label{
+        display:block;
+        color: $form-btn-color;
+        
+    }
+    .edit-details{
+        width: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .shipping-page {
+        text-align: left;
+       
+        margin-bottom: 20px;
+    }
+    .continue-form-btn{
+        margin-top: 25px;
+    }
+    .shipping-selection{
+        border: $form-border;
+        margin-top: 1em;
+        padding: 0px 10px;
+    }
+    .contact-information_list{
+        text-align: left;
+        margin-top: 20px;
+        border-top: none;
+    }
+}

@@ -1,0 +1,40 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  background-color: #ffffff;
+  color: #1B252C;
+  opacity: 1;
+}
+
+.left-header {
+  width: 33.33%;
+  margin-top: 16px;
+}
+
+.middle-header {
+  width: 33.33%;
+  margin-top: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 12px;
+}
+
+.right-header {
+  width: 33.33%;
+  margin-top: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  font-size: 12px;
+}
+
+.logo-name {
+  letter-spacing: 6px;
+  font-weight: 100;
+}
+/*# sourceMappingURL=Header.css.map */

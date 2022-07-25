@@ -1,0 +1,103 @@
+    
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Playfair+Display:ital,wght@1,500&display=swap');
+    
+$FontFamily: 'Mulish', sans-serif;
+$FontColor: #ffffff;
+$FontSize: 16px;
+$FontWeight: 700;
+$header-background-color: #e26a2c;
+$Btn-Border: 1px solid #e26a2c;
+$Collection-Btn-Color: #e26a2c;
+$Btn-Color: #ffffff;
+
+
+$CheckoutPageColor: 172026;
+$HeaderUnderlineColor: #e26a2c;
+$CheckoutPageColor: 172026;
+$FontFamily: 'Mulish', sans-serif;
+$FormFontLabelSize: 14px;
+$FormFontWeight: 600;
+$FormBorder: 1px solid #B5B7BC;
+$FormInputBorderRadius: 8px;
+$FormTextAlign: left;
+$FormLineHeight: 2;
+$FormBtnBorder: 1px solid #e26a2c;
+$FormBtnColor: #e26a2c;
+
+
+
+$font-text-align : left;
+$font-labels : 14px;
+$form-lineheight: 2;
+$form-border: 1px solid #b5b7bc;
+$form-font-label-size: 14px;
+$form-btn-border: 1px solid #e26a2c;
+$form-btn-color: #e26a2c;
+$header-underline-color: #e26a2c;
+$font-family: 'Mulish', sans-serif;
+$font-color: 172026;
+$color : #ffffff;
+
+// footer-component
+$footer-color: #1b252c;
+$footer-background-color: #ffffff;
+$footer-bottom-color: #44bae8;
+$footer-font-family: 'Mulish', sans-serif;
+$footer-font-size: 16px;
+$footer-font-weight: 700;
+$footer-social-icons-top: 10px;
+$footer-social-icons-left: 16px; 
+$footer-bottom-font-size: 14px;
+
+// contact-information
+$header-underline-color: #e26a2c;
+$checkout-page-color: 172026;
+$font-family: 'Mulish', sans-serif;
+$form-font-label-size: 14px;
+$form-font-weight: 600;
+$form-border: 1px solid #B5B7BC;
+$form-input-border-radius: 8px;
+$form-text-align: left;
+$form-line-height: 2;
+$form-btn-border: 1px solid #e26a2c;
+$form-btn-color: #e26a2c;
+
+.edit-image{
+    width: 16px;
+    height: 24px;
+   
+}
+select#countryname{
+    border: $FormBorder;
+    width: 94% !important;
+    height: 32px;
+    border-radius: $form-input-border-radius;
+    opacity: 1;
+}
+
+// Paymentinfo component
+$font-family: 'Mulish', sans-serif;
+$font-text-align : left;
+$font-labels : 14px;
+$form-border: 1px solid #b5b7bc;
+$form-font-label-size: 14px;
+$form-btn-border: 1px solid #e26a2c;
+$form-btn-color: #e26a2c;
+$payment-color: #b5b7bc;
+$header-underline-color: #e26a2c;
+$font-color: 172026;
+$form-font-weight: 600;
+$form-input-border-radius: 8px;
+$form-line-height: 2;
+$font-size: 14px;
+
+// secondary header component
+$secondaryHeaderFontFamily: 'Mulish', sans-serif;
+$secondaryHeaderFontSize: 16px;
+$secondaryHeaderFontWeight: 700;
+$secondaryHeaderFontColor: #1b252c;
+$secondaryHeaderBorderColor: #d9cece;
+$secondaryHeaderBoxShadow: 0px 2px #d3c7c7;
+$secondaryHeaderDropdownFontSize: 14px;
+
+

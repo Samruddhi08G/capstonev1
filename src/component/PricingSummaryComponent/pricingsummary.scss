@@ -1,0 +1,34 @@
+$HeaderUnderlineColor: #e26a2c;
+$CheckoutPageColor: 172026;
+$FontFamily: 'Mulish', sans-serif;
+$FormFontLabelSize: 14px;
+$FormFontWeight: 600;
+$FormBorder: 1px solid #B5B7BC;
+$FormInputBorderRadius: 8px;
+$FormTextAlign: left;
+$FormLineHeight: 2;
+$FormBtnBorder: 1px solid #e26a2c;
+$FormBtnColor: #e26a2c;
+$FontColor: 172026;
+
+
+.pricing-summary_section{
+    font-family: $FontFamily;
+    font-size: $FormFontLabelSize;
+    color: $FontColor;
+}
+
+.pricing-summary_details{
+    display: grid;
+    grid-template-columns: 2fr;
+    border: $FormBorder;
+    padding: 0px 10px;
+    line-height: $FormLineHeight;
+    margin-bottom: 1em;
+}
+
+.pricing-details{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}

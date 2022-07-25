@@ -1,0 +1,38 @@
+
+@import './../../variables.scss';
+
+.form-btn{
+    width: 25%;
+    height: 32px;
+    color: $form-btn-border;
+    background-color: white;
+    border: $form-btn-border;
+    margin-top: 25px;
+}
+
+.continue-btn{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.form-btn {
+    width: 50%;
+    height: 32px;
+    color: 1px solid #e26a2c;
+    background-color: white;
+    border: 1px solid #e26a2c;
+    margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px){
+.form-btn {
+    width: 25%;
+    height: 32px;
+    color: 1px solid #e26a2c;
+    background-color: white;
+    border: 1px solid #e26a2c;
+    margin-top: 16px;
+   
+  }
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Playfair+Display:ital,wght@1,500&display=swap');
+    
+  
+    $cartFontcolor: #1b252c;
+    $cartBackgroundColor: #ffffff;
+    $cartFontFamily: 'Mulish', sans-serif;
+    $cartFontSize: 16px;
+    $cartFontWeight: 700;
+    $cartHeaderFont: 18px;
+    $blueColorTriangle: #3d84ff;
+    $box-shadow: 0px 1px #d3c7c7;
+    $cartBorder: 1px solid #d3c7c7;
+
+    .cart-carousel-section{
+        font-family: $cartFontFamily;
+        font-size: $cartFontSize;
+        color: $cartFontcolor;
+        padding: 0px 140px;
+    }
+
+    .cc-grid-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .cc-img{
+        width: 100px;
+        height: 200px;
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 320px) {
+        .cart-carousel-section{
+            display: none;
+        }
+    }

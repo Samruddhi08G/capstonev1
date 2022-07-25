@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Playfair+Display:ital,wght@1,500&display=swap');
+@import './../../variables.scss';
+
+$productDetailsFontFamily: 'Mulish', sans-serif;
+$productDetailsFontSize: 16px;
+$productDetailsFontWeight: 700;
+$productDetailsColor: #1b252c;
+$blueColorTriangle: #3d84ff;
+$pinkColorTringle: #d114c2;
+$blackColorTriangle: #000;
+$greyColorTriangle: #333;
+$triangleBlockWidth: 50%;
+$triangleBlockHeight: 100;
+$color-div-border-radius: 8px;
+$productDetailsBackgroundColor: #ffffff;
+$color: #ffffff;
+$landing-page_background-color: #00000033;
+$landing-page-banner_heading-color: #172026;
+$shop-btn_background-color: #e26a2c;
+ 
+.productDetails{
+    padding: 0px 140px;
+    padding-top: 30px;
+    font-family: $productDetailsFontFamily;
+    color: $productDetailsColor;
+}
+.prodcutDetails-grid{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr;
+    grid-gap: 0.5rem;
+   
+}
+
+.productDetails-column1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+}
+.column1-image{
+    height: 32%;
+    text-align: center;
+    width: 100%;
+}
+
+.image1{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #d3c7c7;
+    margin: 0px;
+    padding: 3px 0px;
+    object-fit: contain;
+}
+
+
+.image2{
+    height: 571px;
+    padding: 0px 40px;
+    border: 1px solid #d3c7c7;
+    width: 340px;
+    object-fit: contain;
+}
+
+.productDetails-column3{
+    text-align: left;
+    margin-left: 10px;
+}
+.shop-btn{
+    width: 50%;
+    height: 32px;
+    color: $color;
+    border: none;
+    background-color: $shop-btn_background-color;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.like-icon-section{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+}
+.like-icon{
+   margin-left: 5px; 
+}
+.productdetails-breadcrumb{
+    font-weight: $productDetailsFontWeight;
+    font-size: $productDetailsFontSize;
+}
+.triangle-color-section{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+  
+}
+
+.blue-triangle{
+    background-color: $blueColorTriangle;
+    width: $triangleBlockWidth;
+    height: $triangleBlockHeight;
+    border-radius: $color-div-border-radius;
+}
+.pink-triangle{
+    background-color: $pinkColorTringle;
+    width: $triangleBlockWidth;
+    height: $triangleBlockHeight;
+    border-radius: $color-div-border-radius;
+}
+.black-triangle{
+    background-color: $blackColorTriangle;
+    width: $triangleBlockWidth;
+    height: $triangleBlockHeight;
+    border-radius: $color-div-border-radius;
+}
+.grey-triangle{
+    background-color: $greyColorTriangle;
+    width: $triangleBlockWidth;
+    height: $triangleBlockHeight;
+    border-radius: $color-div-border-radius;
+}
+.size-section{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+}
+
+.size-block{
+    border: 1px solid #dadee1;
+    height: 22px;
+    width: 40px;
+    text-align: center;
+    color: $productDetailsColor;
+    border-radius: 5px;
+}
+.quantity-section-product-details{
+    display: flex;
+   flex-direction: row;
+}
+.minus-quantity{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #dadee1;
+    border-radius: 18px;
+    text-align: center;
+    font-size: $productDetailsFontSize;
+    background-color: #dadee1;
+    font-weight: $productDetailsFontWeight;
+
+    
+}
+.add-quantity{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #dadee1;
+    border-radius: 18px;
+    text-align: center;
+    font-size: $productDetailsFontSize;
+    margin-left: 10px;
+    font-weight: $productDetailsFontWeight;
+}
+.number-block{
+    height: 25px;
+    width: 100px;
+    border: 1px solid #dadee1;
+    text-align: center;
+    font-size: $productDetailsFontSize;
+    margin-left: 10px;
+    font-size: $productDetailsFontSize;
+    font-weight: $productDetailsFontWeight;    
+    border-radius: 8px;
+
+}
+
+.pd-button {
+    background-color: $blueColorTriangle;
+    border: none;
+    color: $productDetailsBackgroundColor;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-top: 30px;
+    width: 70%;
+    height: 32px;
+  }
+
+  .icon{
+    margin-left: 15px;
+    height: 18px;
+  }
+
+  .icons{
+    margin-left: 10px;
+    font-weight: $productDetailsFontWeight;
+  }
+
+  .color-div{
+    border-radius: $color-div-border-radius;
+    width: 100%;
+    height: 100%;
+  }
+.dummy-text{
+    font-size: $productDetailsFontSize;
+    font-family: $productDetailsFontFamily;
+    color: $productDetailsColor;
+    line-height: 2;
+}
+  // mobile and tablet view
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .column1-image {
+        display: none;
+    }
+    .image2 {
+        height: auto;
+        padding: 10px 23px;
+        border: 1px solid #d3c7c7;
+        width: 70%;
+    }
+    .prodcutDetails-grid {
+        display: block;
+    }
+    .productDetails {
+        padding: 20px 0px; 
+    }
+    .shop-btn{
+        width: 50%;
+        height: 32px;
+        color: $color;
+        border: none;
+        background-color: $shop-btn_background-color;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .productdetails-breadcrumb{
+        display: none;
+    }
+    .quantity-section-product-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .like-icon-section {
+        justify-content: center;
+    }
+
+    .productDetails-column3 {
+        text-align: left;
+         padding: 10px;
+    }
+    .pd-button {
+        background-color: #3d84ff;
+        border: none;
+        color: #ffffff;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+        margin-top: 30px;
+        width: 100%;
+        height: 32px;
+    }
+    
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .shop-btn{
+        width: 50%;
+        height: 32px;
+        color: $color;
+        border: none;
+        background-color: $shop-btn_background-color;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+ }

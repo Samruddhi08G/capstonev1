@@ -1,0 +1,59 @@
+$HeaderUnderlineColor: #e26a2c;
+$CheckoutPageColor: 172026;
+$FontFamily: 'Mulish', sans-serif;
+$FormFontLabelSize: 14px;
+$FormFontWeight: 600;
+$FormBorder: 1px solid #B5B7BC;
+$FormInputBorderRadius: 8px;
+$FormTextAlign: left;
+$FormLineHeight: 2;
+$FormBtnBorder: 1px solid #e26a2c;
+$FormBtnColor: #e26a2c;
+
+.sign-in_section{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .sign-in_section{
+        display: block;
+    }
+    .sign-in_details{
+        display: flex;
+        justify-content: space-between;
+        border: $FormBorder;
+        margin-bottom: 1em;
+        padding: 0px 10px;
+    }
+    .form-btn{
+        width: 50%;
+        height: 32px;
+        color: $FormBtnColor;
+        background-color: white;
+        border: $FormBtnBorder;
+        margin-top: 25px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+    .sign-in_section{
+        display: block;
+    }
+    .sign-in_details{
+        display: flex;
+        justify-content: space-between;
+        border: $FormBorder;
+        margin-bottom: 1em;
+        padding: 0px 10px;
+    }
+    .form-btn{
+        width: 50%;
+        height: 32px;
+        color: $FormBtnColor;
+        background-color: white;
+        border: $FormBtnBorder;
+        margin-top: 25px;
+        margin: auto;
+    }
+}

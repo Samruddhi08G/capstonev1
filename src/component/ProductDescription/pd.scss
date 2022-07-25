@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+$pdFontFamily: 'Mulish', sans-serif;
+$pdFontSize: 16px;
+$pdFontWeight: 700;
+$pdColor: #1b252c;
+
+
+.product-description-section{
+    padding: 0px 200px;
+    margin-top: 30px;
+}
+.product-description-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+    font-family: $pdFontFamily;
+    font-size: $pdFontSize;
+    color: $pdColor;
+    text-align: left;
+
+}
+.pd-info{
+    text-align:justify;
+}
+
+
+.description-setion{
+    display: grid;
+    grid-template-columns: 2.5fr 2fr;
+    grid-gap: 1em;
+    font-family: $pdFontFamily;
+    font-size: $pdFontSize;
+    color: $pdColor;
+    text-align: left;
+    line-height: 2;
+
+}
+.details-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 36px;
+}
+
+.des-font-details{
+    font-size: $pdFontSize;
+    color: $pdColor;
+    text-align: left;
+    line-height: 2;
+    font-family: $pdFontFamily;
+
+}
+.sweat-wicking{
+    margin-top: -36px;
+}
+.details-page-icons{
+    height: 22px;
+    width: 30px;
+}
+  // mobile and tablet view
+  @media only screen and (max-width: 767px) and (min-width: 320px) {
+   
+    .product-description-section {
+        padding: 0px 7px !important; 
+    }
+    .product-description-grid {
+        display: block;
+        font-family: "Mulish", sans-serif;
+        font-size: 16px;
+        color: #1b252c;
+        text-align: left;
+        padding: 0px 17px;
+    }
+    .description-setion {
+        display: block;
+        text-align: left;
+        line-height: 2;
+    }
+}

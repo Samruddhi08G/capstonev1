@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&family=Playfair+Display:ital,wght@1,500&display=swap');
+@import './../../variables.scss';
+
+$secondaryHeaderFontFamily: 'Mulish', sans-serif;
+$secondaryHeaderFontSize: 16px;
+$secondaryHeaderFontWeight: 700;
+$secondaryHeaderFontColor: #1b252c;
+$secondaryHeaderBorderColor: #d9cece;
+$secondaryHeaderBoxShadow: 0px 2px #d3c7c7;
+$secondaryHeaderDropdownFontSize: 14px;
+
+
+
+.secondary-header-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $secondaryHeaderFontFamily;
+    font-size: $secondaryHeaderFontSize;
+    font-weight: $secondaryHeaderFontWeight;
+    color: $secondaryHeaderFontColor;
+    padding: 0px 140px;
+}
+
+select#sort{
+    width: 200px;
+    height: 30px;
+    color: $secondaryHeaderFontColor;
+    border-color: $secondaryHeaderBorderColor;
+    font-family: $secondaryHeaderFontFamily;
+    font-size: $secondaryHeaderDropdownFontSize;
+    font-weight: $secondaryHeaderFontWeight;
+}
+
+.results-section{
+    margin-right: 50%;
+    
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+   
+    select#sort{
+        display: none;
+    }
+    .secondary-header{
+        margin-top: 130px;
+    }
+    .secondary-header-row {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px;
+        text-align: left;
+    
+    }
+    .results-section {
+         margin-right: 0%; 
+    }
+}

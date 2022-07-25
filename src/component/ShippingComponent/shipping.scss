@@ -1,0 +1,142 @@
+@import './../../variables.scss';
+
+$font-text-align : left;
+$font-labels : 14px;
+$form-line-height: 2;
+$form-border: 1px solid #b5b7bc;
+$form-font-label-size: 14px;
+$form-btn-border: 1px solid #e26a2c;
+$form-btn-color: #e26a2c;
+$payment-color: #b5b7bc;
+$header-underline-color: #e26a2c;
+$font-family: 'Mulish', sans-serif;
+$font-color: 172026;
+
+.shipping-section{
+    font-family: $font-family;
+    color: $font-color;
+}
+.checkout-header{
+    text-align: center;
+}
+.contact-information_header{
+    background-color: $header-underline-color;
+    height: 5px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+.guest-checkout_details{
+    border: $FormBorder;
+    padding: 10px 10px;
+    font-size: $form-font-label-size;
+}
+.shipping_contact-details{
+    line-height: 1.6;
+}
+.shipping-info{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    align-items: center;
+}
+.shipping-details{
+    line-height: $form-line-height;
+}
+.shipping-page{
+    text-align: $font-text-align;
+}
+
+input[type='radio']{
+    width: 16px;
+    height: 20px;
+
+}
+.shipping_selection-row{
+    display: flex;
+    flex-direction: row;
+}
+.shipping_labels{
+    font-size: $font-labels;
+    margin-left: 10px;
+    text-align: justify;
+}
+.form-btn{
+    width: 50%;
+    height: 32px;
+    color: $form-btn-color;
+    background-color: white;
+    border: $form-btn-border;
+    margin-top: 25px;
+}
+.continue-btn{
+    text-align: center;
+}
+.checkout-shipping_payment-method{
+    text-align: left;
+    margin-top: 20px;
+    border-top: $FormBorder;
+    color: $payment-color;
+}
+
+input[type='radio']:checked:after {
+    width: 6px;
+    height: 7px;
+    border: $form-btn-border;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+.edit-label{
+    display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .edit-label{
+        display:block;
+        color: $form-btn-color;
+        
+    }
+    .edit-details{
+        width: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .shipping-selection{
+        border: $form-border;
+        margin-top: 1em;
+        padding: 0px 10px;
+    }
+    .continue-form-btn{
+        margin-top: 25px;
+    }
+    .shipping-page {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+    
+    .edit-label{
+        display:block;
+        color: $form-btn-color;
+        
+    }
+    .edit-details{
+        width: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .shipping-page {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .continue-form-btn{
+        margin-top: 25px;
+    }
+    .shipping-selection{
+        border: $form-border;
+        margin-top: 1em;
+        padding: 0px 10px;
+    }
+}
