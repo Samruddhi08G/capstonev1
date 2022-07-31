@@ -15,7 +15,7 @@ const OrderButton = () =>{
                 ...shippinginfodata_store, ...shippingMethod_Store, ...paymentInformation_Store
             }
               });
-        debugger
+      
         console.log(placeorderbtnflag)
     }, [shippinginfodata_store, shippingMethod_Store, paymentInformation_Store])
 

@@ -89,13 +89,13 @@ select#country-name {
 }
 select#state-name {
     border: $FormBorder;
-    width: 96%;
+    width: 97%;
     height: 32px;
     border-radius: $form-input-border-radius;
     opacity: 1;
 }
 .zipcode-input-textbox{
-    margin-left: 10px;
+    margin-left: 0px;
     width: 90%;
     height: 26px;
 }
@@ -176,10 +176,36 @@ input[type='radio']:checked:after {
     margin-left: 2px;
     margin-top: 5px;
 }
+select#state-name {
+    border: 1px solid #B5B7BC;
+    width: 93%;
+    height: 32px;
+    border-radius: 8px;
+    opacity: 1;
+}
 .edit-label{
     display: none;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+@media only screen and (min-width: 320px){
+    select#state-name {
+        border: 1px solid #B5B7BC;
+        width: 98% !important;
+        height: 32px;
+        border-radius: 8px;
+        opacity: 1;
+    }
+}
+@media only screen and (min-width: 768px){
+    select#state-name {
+        border: 1px solid #B5B7BC;
+        width: 93% !important;
+        height: 32px;
+        border-radius: 8px;
+        opacity: 1;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     .contact-information_header {
         background-color: #e26a2c;
         height: 5px;
@@ -191,10 +217,19 @@ input[type='radio']:checked:after {
     }
     .contact-information_grid-columns{
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 2.3fr 1fr;
         margin-top: 20px;
-        grid-gap: 1em;
+        grid-gap: 0.5rem;
+    
     }
+    .form-btn-sign-in {
+       
+        height: 32px;
+        color: 1px solid #e26a2c;
+        background-color: white;
+        border: 1px solid #e26a2c;
+    }
+    
     .contact-information_pricing-summary-column{
         display: block;
     }
@@ -268,8 +303,16 @@ input[type='radio']:checked:after {
         margin-top: 20px;
         border-top: none;
     }
+    input.input-textbox {
+       
+        height: 26px;
+        border: 1px solid #B5B7BC;
+        border-radius: 8px;
+        opacity: 1;
+        padding: 2px 10px;
+    }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+@media only screen and (min-width: 1201px) and (max-width: 1920px)  {
     .contact-information_header {
         background-color: #e26a2c;
         height: 5px;
@@ -361,5 +404,22 @@ input[type='radio']:checked:after {
         text-align: left;
         margin-top: 20px;
         border-top: none;
+    }
+}
+
+@media only screen and ( min-width: 1024px){
+    select#state-name {
+        border: 1px solid #B5B7BC;
+        width: 93%;
+        height: 32px;
+        border-radius: 8px;
+        opacity: 1;
+    }
+    select#countryname {
+        border: 1px solid #B5B7BC;
+        width: 93% !important;
+        height: 32px;
+        border-radius: 8px;
+        opacity: 1;
     }
 }

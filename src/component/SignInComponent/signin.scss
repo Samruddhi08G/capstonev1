@@ -14,7 +14,7 @@ $FormBtnColor: #e26a2c;
     display: none;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     .sign-in_section{
         display: block;
     }
@@ -25,7 +25,7 @@ $FormBtnColor: #e26a2c;
         margin-bottom: 1em;
         padding: 0px 10px;
     }
-    .form-btn{
+    .form-btn-sign-in{
         width: 50%;
         height: 32px;
         color: $FormBtnColor;
@@ -36,7 +36,7 @@ $FormBtnColor: #e26a2c;
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+@media only screen and (min-width: 1201px) and (max-width: 1920px)  {
     .sign-in_section{
         display: block;
     }
@@ -47,7 +47,7 @@ $FormBtnColor: #e26a2c;
         margin-bottom: 1em;
         padding: 0px 10px;
     }
-    .form-btn{
+    .form-btn-sign-in{
         width: 50%;
         height: 32px;
         color: $FormBtnColor;

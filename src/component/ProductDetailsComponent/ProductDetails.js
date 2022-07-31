@@ -95,13 +95,13 @@ const onClick = (id) => {
                 <div className="productDetails-column3">
                   <div className="product-info">
                       <label className="productdetails-breadcrumb">Clothing/ Women's/ outerwear</label>
-                      <h3>{title}</h3>
-                      <h3>${price}</h3>
+                      <h4>{title}</h4>
+                      <h5>${price}</h5>
                       <div className="dummy-text">{description}</div>
                    </div>
                   
                    <div className="quantity-info">
-                      <h4>Quantity</h4>
+                      <h5>Quantity</h5>
                       <div className="quantity-section-product-details">
                         <div className="minus-quantity"  onClick={handleDecrement} >-</div>                                    
                           <div className="number-block">{quantity}</div>
@@ -110,7 +110,7 @@ const onClick = (id) => {
                   </div>
                   <div class="buttons-icon-section">
                     
-                      <button class="shop-btn" onClick={routeChange}>Add to Cart</button>
+                      <button class="shop-btn-pd" onClick={routeChange}>Add to Cart</button>
                     
                     <div className="like-icon-section">
                         {/* <img src={like_icon} className="icon" alt="Like Icon" /> */}

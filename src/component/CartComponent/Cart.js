@@ -11,36 +11,58 @@ import button_image from './../../asset/PP_BTN.png';
 import CartCarousel from './../CartCarouselComponent/CartCarousel';
 import { useNavigate } from "react-router-dom";
 import { Link, NavLink } from "react-router-dom";
+import PricingSummary from "../PricingSummaryComponent/PricingSummary";
+// import { removeSelectedProduct } from "../../redux/actions/productsActions";
 
 
 
 const Cart = () => {
+  
+
+
   let navigate = useNavigate(); 
+
 
   const routeChange = () =>{ 
      let path = `/contact`; 
      navigate(path);
 }
 const [likeProductArray, updateLikeArray] = useState([]);
-const [quantity, setQuantity] = useState(1);
+let addCart = useSelector((state) => state.addCart);
+const [quantity, setQuantity] = useState(new Array(addCart.length).fill(1));
  const items = useSelector(state=> state.addCart);
  const renderProductList = items.map((product) => {
  const {  title, image, price, category, description } = product;
 
  
- const handleDecrement = () => {
-     if (quantity > 1) {
-         setQuantity(prevCount => prevCount - 1); // decrement quantity
+
+ const handleDecrement = (id) => {
+     console.log(id);
+     if (quantity[id] > 1) {
+         let q = quantity;
+         q[id] = q[id] - 1;
+         setQuantity([...q]); // decrement quantity
+         
 
      }
  }
 
- const handleIncrement = () => {
-     if (quantity < 10) {
-         setQuantity(prevCount => prevCount + 1); // increment quantity
+ const handleIncrement = (id) => {
+     if (quantity[id] < 10) {
+         let q = quantity;
+         q[id] = q[id] + 1;
+         setQuantity([...q]); // increment quantity
+        
      }
  }
-
+ const deleteProduct = (id) => {
+  console.log("Index: " + id);
+  addCart.splice(id, 1);
+  let q = quantity;
+  q.splice(id, 1);
+  setQuantity([...q]);
+  console.log("Product removed from cart");
+}
 
 
     const onClick = (id) => {
@@ -55,12 +77,13 @@ const [quantity, setQuantity] = useState(1);
     };
 
  return (
-
+      
     <section className="cart-section">
       <div className="wrapper">
        
         <div className="cart-details">
           <h2>Your Shopping Bag</h2>
+          {/* {addCart.length > 0 ? */}
           <div className="cart-page-grid">
             <div className="cart-product-detail-section">
               <div className="cart-product-image-section">
@@ -88,7 +111,7 @@ const [quantity, setQuantity] = useState(1);
                 <label className="icon-name">Edit</label>
               </div>
               <div className="remove">
-                <img src={delete_icon} className="icon" alt="Delete Icon" />
+                <img src={delete_icon} className="icon" alt="Delete Icon" onClick={() => deleteProduct(product.id)} />
                 <label className="icon-name">Delete</label>
               </div>
               <div className="saveForLater">
@@ -102,6 +125,7 @@ const [quantity, setQuantity] = useState(1);
               </div>
             </div>
             <div className="pricing-section">
+              
               <div className="price-summary">
                 <div className="price-header">Pricing Summary</div>
                 <div className="price-details">
@@ -136,10 +160,13 @@ const [quantity, setQuantity] = useState(1);
                     <img src={button_image} className="button-image" alt="Paypal-Image" />
                   </div>
                 </div>
-              </div>
+              </div> 
 
             </div>
           </div>
+          {/* :
+              <h2 className="empty-cart">Your Cart is Empty</h2>
+          } */}
           <div className="estimation-block">
             <div className="estimated-values-section">
               <div className="est-flex">
@@ -158,7 +185,7 @@ const [quantity, setQuantity] = useState(1);
             <div></div>
           </div>
         </div>
-      
+        
         <div>
            <CartCarousel /> 
         </div>

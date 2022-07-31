@@ -3,6 +3,7 @@
 
 $secondaryHeaderFontFamily: 'Mulish', sans-serif;
 $secondaryHeaderFontSize: 16px;
+$secondaryResponsiveHeaderFontSize: 12px;
 $secondaryHeaderFontWeight: 700;
 $secondaryHeaderFontColor: #1b252c;
 $secondaryHeaderBorderColor: #d9cece;
@@ -37,7 +38,7 @@ select#sort{
     
 }
 
-@media only screen and (max-width: 767px) and (min-width: 320px) {
+@media only screen and (max-width: 768px) and (min-width: 320px) {
    
     select#sort{
         display: none;
@@ -56,3 +57,40 @@ select#sort{
          margin-right: 0%; 
     }
 }
+// @media only screen and (max-width: 767px) and (min-width: 320px) {
+    
+// }
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+    .secondary-header-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "Mulish", sans-serif;
+        font-size: $secondaryResponsiveHeaderFontSize;
+        font-weight: 700;
+        color: #1b252c;
+        padding: 0px 54px;
+    }
+    select#sort{
+        width: 200px;
+        height: 30px;
+        color: $secondaryHeaderFontColor;
+        border-color: $secondaryHeaderBorderColor;
+        font-family: $secondaryHeaderFontFamily;
+        font-size: $secondaryResponsiveHeaderFontSize;
+        font-weight: $secondaryHeaderFontWeight;
+    }
+}
+@media only screen and (max-width: 1920px) and (min-width: 1201px) {
+    .secondary-header-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "Mulish", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #1b252c;
+        padding: 0px 58px;
+    }
+}
+

@@ -294,9 +294,10 @@ const ContactInformation = () => {
                         </div>}
                         </div>
 
-                        
-                         <div>
-                            <Shipping />
+                        <div>
+                            <div className="order-shipping-section">
+                                <Shipping />
+                            </div>
                             <PaymentInfo />
                             <OrderProduct />
                         </div>

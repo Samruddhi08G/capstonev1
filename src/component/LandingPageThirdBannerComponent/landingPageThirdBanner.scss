@@ -37,11 +37,20 @@ $FontColor: #ffffff;
     color: $FontColor;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
     .landingpage-thirdbanner{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        margin: 70px 7%;
+        margin: 70px 5%;
+    }
+    .landingpage-thirdbanner-heading{
+        display: block;
+        position: relative;
+        background-color: $ThirdBannerBackgroundColor;
+        margin: 0px 0px;
+        color: $FontColor;
+        height: 225px;
+        padding: 10px;
     }
     .third-banner-landingpage{
         width: 103%;
@@ -73,6 +82,7 @@ $FontColor: #ffffff;
         display: grid;
         grid-template-columns: 2fr 1fr;
         margin: 70px 7%;
+        margin-top: 6%;
     }
     .third-banner-landingpage{
         width: 103%;

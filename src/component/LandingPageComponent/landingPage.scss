@@ -9,7 +9,7 @@ $landing-page_background-color: #00000033;
 $landing-page-banner_heading-color: #172026;
 $shop-btn_background-color: #e26a2c;
 
- @media only screen and (max-width: 767px) and (min-width: 320px) {
+ @media only screen and (max-width: 768px) and (min-width: 320px) {
     .landing-page{
         font-family: 'Mulish', sans-serif;
         
@@ -28,6 +28,7 @@ $shop-btn_background-color: #e26a2c;
         z-index: 1;
         position: absolute;
         margin-top: 258px;
+      
     }
     .landing-page-banner_image {
         position: absolute;
@@ -46,32 +47,31 @@ $shop-btn_background-color: #e26a2c;
         background-color: $shop-btn_background-color;
     }
     .product-image {
-        padding: 0px 17px;
-        width: 90%;
         position: relative;
         height: auto;
         left: 0;
         display: block;
         margin-top: 500px;
+        width: 100%;
     }
     .product-images {
-        padding: 0px 17px;
-        width: 90%;
+        width: 100%;
         position: relative;
         height: auto;
         left: 0;
         display: block;
-        margin-top: 0px;
+        
     }
     .product-description{
         background: #1B252CD9;
         z-index: 1;
         position: absolute;
         margin-top: -100px;
-        width: 100%;
+         width: 100%;
         opacity: 1;
         height: 112px;
         color: $color;
+       
 
     }
     .product-underline{
@@ -81,7 +81,20 @@ $shop-btn_background-color: #e26a2c;
     
  }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+ @media only screen and (max-width: 768px){
+    .landingpage_all-details {
+        padding: 0px 20px;
+        background-color: transparent;
+        z-index: 1;
+        position: absolute;
+        margin-top: 258px;
+        
+    }
+ }
+// tablet view
+
+
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
     .landing-page-banner_section{
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -89,10 +102,10 @@ $shop-btn_background-color: #e26a2c;
    
     .landing-page-banner_image{
         position: inherit;
-        z-index: 9999;
+        
       }
     .landing-page-banner_heading{
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .landing-page-banner_details{
         line-height: 2;
@@ -109,19 +122,19 @@ $shop-btn_background-color: #e26a2c;
         background-color: $landing-page_background-color;
         color: $landing-page-banner_heading-color;
         font-family: auto;
-        padding: 0px 110px;
+        padding: 0px 20px;
         text-align: left;
     }
     .homepage-banner{
         width: 100%;
-       
+        height: 500px;
     }
     .landing-page_product-section{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 1em;
         text-align: center;
-        margin: 40px 2%;
+        margin-top: -40px;
         padding: 0px 6%;
     }
     .landing-page_product-image{
@@ -139,16 +152,17 @@ $shop-btn_background-color: #e26a2c;
         border: 1px solid lightgrey;
     }
     .product-description{
-        margin: 0 auto;
+       
         display: block;
         font-family: 'Mulish', sans-serif;
-        margin: -84px 0%;
         padding: 1%;
-        line-height: 10px;
+        line-height: 5px;
         color: #ffffff;
         z-index: 5;
         position: relative;
         background: #1B252CD9;
+        margin: -63px 0%;
+        font-size: 12px;
     }
     .product-underline{
         width: 100%;
@@ -156,7 +170,8 @@ $shop-btn_background-color: #e26a2c;
     }
 }
 
-@media only screen and (max-width: 1920px) and (min-width: 1025px){
+
+@media only screen and (max-width: 1920px) and (min-width: 1201px){
     .landing-page-banner_section{
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -175,7 +190,7 @@ $shop-btn_background-color: #e26a2c;
     }
     .landing-page-banner_image{
         position: inherit;
-        z-index: 9999;
+        
       }
     .landing-page-banner_heading{
         margin-top: 150px;
@@ -195,7 +210,7 @@ $shop-btn_background-color: #e26a2c;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 1em;
         text-align: center;
-        margin: 40px 2%;
+        margin: -34px 2%;
         padding: 0px 6%;
     }
     .landing-page_product-image{
@@ -219,7 +234,7 @@ $shop-btn_background-color: #e26a2c;
         font-family: 'Mulish', sans-serif;
         background: #1B252CD9;
         margin: -84px 0%;
-        padding: 1%;
+        padding: 1px;
         line-height: 10px;
         color: #ffffff;
         z-index: 5;
@@ -227,7 +242,10 @@ $shop-btn_background-color: #e26a2c;
     }
     .product-underline{
         width: 100%;
-        height: 5px;
+        height: 8px;
+    }
+    .landing-page_secondbanner-section{
+        margin-top: 8%;
     }
 
 }

@@ -48,7 +48,7 @@ $productListFontFamily: 'Mulish', sans-serif;
     }
 
 
-// mobile and tablet view
+// mobile view
 @media only screen and (max-width: 767px) and (min-width: 320px) {
    .productList-grid {
     display: grid;
@@ -74,6 +74,68 @@ $productListFontFamily: 'Mulish', sans-serif;
     }
 }
 
+// tablet view
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+    .productList-name-section {
+        font-family: "Mulish", sans-serif;
+        color: #1b252c;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 5px;
+    }
+    .productListImage {
+        width: 80%;
+        height: 170px;
+    }
+    .productList-image-section {
+        text-align: center;
+        height: 65%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1201px) {
+    .productList-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .productList-section{
+        margin-bottom: 20px;
+    }
+
+    .productList-grid1{
+        height: 100%;
+    }
+    .productList-items{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #d3c7c7;
+        
+    }
+    .productList-image-section{
+        text-align: center;
+        height: 65%;
+        padding: 20px;
+    }
+    .productListImage{
+        width: 50%;
+        height: 250px;
+    }
+
+    .productList-name-section{
+        font-family: $productListFontFamily;
+        color: $productListColor;
+        font-size: $productListFontSize;
+        font-weight: $productListFontWeight;
+        padding: 5px;
+    }
+
+    .productList-price{
+        text-align: left;
+    }
+
+}
 
 
 

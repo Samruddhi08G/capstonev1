@@ -50,11 +50,11 @@ $Collection-Btn-Color: #e26a2c;
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
     .landingPage-secondary-banner{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 70px 7%;
+        margin: 70px 3%;
         margin-top: 160px;
     }
     
@@ -71,7 +71,7 @@ $Collection-Btn-Color: #e26a2c;
     }
     .secondary-banner_landingpage{
         width: 100%;
-        height: 375px;
+        height: 450px;
     }
     
     .landingpage-secondary-banner-alldetails{
@@ -100,7 +100,7 @@ $Collection-Btn-Color: #e26a2c;
     } 
 }
 
-@media only screen and (max-width: 1920px) and (min-width: 1025px){
+@media only screen and (max-width: 1920px) and (min-width: 1201px){
     .landingPage-secondary-banner{
         display: grid;
         grid-template-columns: 1fr 1fr;

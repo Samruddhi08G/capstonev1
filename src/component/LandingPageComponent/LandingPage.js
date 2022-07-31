@@ -1,6 +1,6 @@
 import React from 'react';
 import './landingPage.scss';
-import hero_banner from './../../asset/hero-image.jpg';
+import hero_banner from './../../asset/hero-image-mobile.png';
 import product_image_women from './../../asset/product-woman-image.jpeg';
 import product_image_men from './../../asset/product-image-men.jpg';
 import product_image_jewellery from './../../asset/product-image-jewellery.jpg';

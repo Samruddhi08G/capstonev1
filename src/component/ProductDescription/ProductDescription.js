@@ -40,38 +40,38 @@ const ProductDescription = () => {
         </div>
       ) : ( 
                 <div className="product-description-grid">
-                <h3>{title}</h3>
+                <h4>{title}</h4>
                     <div className="description-setion">
                         <div className="pd-info">
-                        <h4>Description</h4>
+                        <h5>Description</h5>
                             <p className="des-font-details">{description}
                             </p>
                         </div>
                    
                     <div className="details-grid">
                         <div>
-                        <h4>Details</h4>
+                        <h5>Details</h5>
                         </div>
                         <div></div>
                         <div className="sweat-wicking">
                         <label></label>
                             <img src={sweat} className="details-page-icons" alt="Sweat" /> 
-                            <label>Sweat Wicking</label>
+                            <label className='label-text'>Sweat Wicking</label>
                         </div>
                         <div className="sweat-wicking">
                         
                             <img src={breathable} className="details-page-icons" alt="Breathable" /> 
-                            <label>Breathable</label>
+                            <label className='label-text'>Breathable</label>
                         </div>
                         <div className="sweat-wicking">
                         
                              <img src={feather} className="details-page-icons" alt="feather" /> 
-                            <label>Lightweight Fabric</label>
+                            <label className='label-text'>Lightweight Fabric</label>
                         </div>
                         <div className="sweat-wicking">
                            
                              <img src={material} className="details-page-icons" alt="material" />  
-                            <label>69% nylon, 31% lycra </label>
+                            <label className='label-text'>69% nylon, 31% lycra </label>
                         </div>
                         
                     </div>

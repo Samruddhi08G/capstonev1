@@ -88,7 +88,8 @@ input[type='radio']:checked:after {
 .edit-label{
     display: none;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     
     .edit-label{
         display:block;
@@ -104,6 +105,7 @@ input[type='radio']:checked:after {
         border: $form-border;
         margin-top: 1em;
         padding: 0px 10px;
+        width: 86%;
     }
     .continue-form-btn{
         margin-top: 25px;
@@ -111,11 +113,26 @@ input[type='radio']:checked:after {
     .shipping-page {
         text-align: left;
         margin-bottom: 20px;
+    }
+    .shipping-section{
+        width: 130%;
+        margin-left: -75px;
     }
 }
 
+@media only screen and(min-width: 1024px) {
+    .shipping-method_section{
+        width: 88%;
+    }
+    .shipping-section{
+        width: 134%;
+        margin-left: -75px;
+    }
+}
+    
 
-@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+
+@media only screen and (min-width: 1201px) and (max-width: 1920px)  {
     
     .edit-label{
         display:block;
@@ -138,5 +155,9 @@ input[type='radio']:checked:after {
         border: $form-border;
         margin-top: 1em;
         padding: 0px 10px;
+    }
+     .shipping-section{
+        width: 113.5%;
+       
     }
 }

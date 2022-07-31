@@ -30,5 +30,35 @@ export const addProductsToCart = (p) => {
   };
 
 };
+//for remove item from cart
+export const removeFromCart = (p) => {
+  return {
+      type: ActionTypes.DELETE_FROM_CART,
+      playload: p,
+  };
+};
+
+// export const removeSelectedProduct = (payload) => {
+//   return {
+//     type: ActionTypes.REMOVE_SELECTED_PRODUCT,
+//     payload
+//   };
+// };
+
+
+// export const setFilter = (filter) => {
+//   return {
+//     type: ActionTypes.SET_FILTER,
+//     payload: filter,
+//   };
+// };
+
+
+// export const setWishlist = (id) => {
+//   return {
+//     type: ActionTypes.SET_WISHLIST,
+//     payload: id,
+//   };
+// };
 
 

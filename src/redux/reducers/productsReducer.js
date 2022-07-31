@@ -35,6 +35,42 @@ export const addProductReducer = (state = [], { type, playload }) => {
   }
 
 };
+//remove product from detail page
+export const removeProductReducer = (state = [], { type, playload }) => {
+  switch (type) {
+      case ActionTypes.DELETE_FROM_CART:            
+          return {};
+      default:
+          return state;
+  }
+};
+
+//remove product from cart
+// export const removeProductToCart = (state = [], { type, playload }) => {
+//   switch (type) {
+//     case ActionTypes.REMOVE_SELECTED_PRODUCT:
+//        return [...state, ...[playload]]
+//         default:
+//         return state;
+
+//   }
+
+// };
 
 
+// export const wishlistReducer = (state = wishlistState, action) => {
+  
+//   switch (action.type) {
+//     case ActionTypes.SET_WISHLIST:
+//       let itemIds = cloneDeep(state.wishlist);
+//       if(itemIds.includes(action.payload)){
+//         itemIds = itemIds.filter(id=>id != action.payload)
+//       }else{
+//         itemIds = [...itemIds, action.payload]; 
+//       }
+//       return { ...state, wishlist: itemIds };
+//     default:
+//       return state;
+//   }
+// };
 

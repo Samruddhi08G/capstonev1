@@ -23,6 +23,7 @@ $font-size: 14px;
     font-family: $font-family;
     text-align: $form-text-align;
     line-height: $form-line-height;
+    width: 100%;
 }
 
 .payment-selection-row{
@@ -102,13 +103,20 @@ input#billing-address{
     margin-top: 1em;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.payment-information_section {
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     .payment-information_section {
         padding: 0px 50px;
         color: 172026;
         font-family: "Mulish", sans-serif;
         text-align: left;
         line-height: 2;
+        margin-left: -45px;
+        width: 134%;
+    
     }
     .contact-information_header {
         background-color: #e26a2c;
@@ -133,7 +141,7 @@ input#billing-address{
         font-size: $font-size;
     }
     input.input-textbox{
-        width: 46%;
+       
         height: 26px;
         border: 1px solid #B5B7BC;
         border-radius: 8px;
@@ -154,6 +162,7 @@ input#billing-address{
         margin-top: 25px;
         margin-bottom: 25px;
     }
+    
 }
 .checkout-shipping_payment-method{
     text-align: left;
@@ -163,7 +172,7 @@ input#billing-address{
 }
 
 
-@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+@media only screen and (min-width: 1201px) and (max-width: 1920px)  {
     .payment-information_section {
         padding: 0px 0px;
         color: 172026;
@@ -227,3 +236,5 @@ input#billing-address{
         margin-bottom: 1em;
     }
 }
+
+  

@@ -26,8 +26,9 @@
 }
 .order-summary_social-icons{
     display: flex;
-    margin-left: 176px;
+    margin-left: 74px;
     gap: 34px;
+      
 }
 .social-icons {
     display: flex;
@@ -49,11 +50,22 @@
     width: 100px;
     height: 5px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.order-des{
+    text-align: justify;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .order-shipping-section {
+    width: 100%;
+    margin-left: 0% !important;
+}
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
     .order-summary_section{
         font-family: $font-family;
         color: $font-color;
-        padding: 10px 80px;
+        padding: 10px 58px;
     }
     .checkout-image{
         width: 100px;
@@ -63,11 +75,16 @@
         display: grid;
         grid-template-columns: 2.5fr 1fr;
         grid-gap: 1em;
+        margin-left: -4%;
+
     }
-    .order-summary_grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1em;
+   .order-shipping-section{
+        width: 103%;
+        margin-left: -1%;
+   }
+    .order-summary_grid {
+        margin-top: -1%;
+        width: 148%;
     }
     .order-summary_offer{
         display: block;
@@ -76,12 +93,17 @@
         line-height: $form-lineheight;
         padding: 20px 20px;
         height: 250px;
-        margin-top: 1em;
+        margin-top: 2.5em;
     }
     .order-summary_social-icons{
         display: flex;
         margin-left: 96px;
         gap: 34px;
+    }
+    .order-des{
+        text-align: justify;
+        font-size: 16px;
+
     }
     
     .order-number{
@@ -93,7 +115,7 @@
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1920px)  {
+@media only screen and (min-width: 1201px) and (max-width: 1920px)  {
     .order-summary_section{
         font-family: $font-family;
         color: $font-color;
@@ -142,5 +164,16 @@
         width: 166% !important;
         margin-left: -15% !important;
     }
+    .order-shipping-section{
+        width: 88%;
+        margin-left: 9% !important;
+   }
+}
+
+@media only screen and (min-width: 1440px){
+    .order-shipping-section{
+        width: 100%;
+        margin-left: 8.4% !important;
+   }
 }
 

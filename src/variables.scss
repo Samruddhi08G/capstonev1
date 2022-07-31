@@ -74,6 +74,15 @@ select#countryname{
     border-radius: $form-input-border-radius;
     opacity: 1;
 }
+@media only screen and (max-width: 1024px){
+    select#countryname {
+        border: 1px solid #B5B7BC;
+        width: 93% !important;
+        height: 32px;
+        border-radius: 8px;
+        opacity: 1;
+    }
+}
 
 // Paymentinfo component
 $font-family: 'Mulish', sans-serif;
